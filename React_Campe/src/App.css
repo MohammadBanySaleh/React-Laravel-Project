@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+}
+
+/* Pagination container */
+.pagination-container {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Pagination component styles */
+.pagination {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  text-decoration: none;
+    padding: 8px 18px;
+  background-color: #637E4C;
+  color: #fff;
+  /* cursor: pointer; */
+}
+
+.pagination a.active {
+  background-color: #94f19a;
+}
+
+/* Styling for "Previous" and "Next" buttons */
+.pagination a.previous, .pagination a.next {
+  background-color: #ddd;
+}
+
+/* Styling for the "..." break element */
+.pagination a.break-me {
+  font-weight: bold;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.link{
+  
+  color: white !important;
+}
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  padding-right: 30px; /* Adjust the padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50px;
+  width: 240px;
+  font-size: 16px;
+  padding: 10px 20px;
+
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  color: #999; /* Adjust the color of the icon */
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.image-1235x547 {
+  width: 1235px;
+  height: 547px;
+  object-fit: cover; /* This ensures the image covers the entire specified area without distortion. */
+}
